@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/15f55d277b.js" crossorigin="anonymous"></script>
+    <title>Survey</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+    }
+    body{
+        background-color: rgb(234, 232, 232);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 25vw 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .container .card-head{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-shadow: rgba(149,157,165,.3) 0px 8px 24px 4px;
+        background-color: #fff;
+    }
+    .container .card-head img{
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 150px;
+    }
+    .container .card-head .info{
+        padding: 10px;
+    }
+    .container .card-head .info h1{
+        padding: 5px 0 5px;
+        font-size: 24pt;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0;
+    }
+    .container .card-head .info p{
+        text-align: justify;
+        font-size: 11pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+
+    .container .card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-shadow: rgba(149,157,165,.3) 0px 8px 24px 4px;
+        background-color: #fff;
+    }
+    .container .card{
+        padding: 15px;
+    }
+    .container .card h3{
+        margin-bottom: 10px;
+        font-size: 12pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+    /*-----Text-----*/
+    .container .card .text input[type="text"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+        width: 50%;
+
+        font-size: 11pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+    .container .card .text input[type="text"]:focus{
+        border-bottom: 2px solid rgba(149,157,165,.9);
+    }
+    /*-----Text-----*/
+    /*-----Text-----*/
+    .container .card .bigtext textarea{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+        width: 100%;
+        resize: none;
+        overflow: hidden;
+
+        font-size: 11pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+    .container .card .bigtext textarea:focus{
+        border-bottom: 2px solid rgba(149,157,165,.9);
+    }
+    /*-----Text-----*/
+    /*-----Time-----*/
+    .container .card .time input[type="time"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+    }
+    /*-----Time-----*/
+    /*-----Date-----*/
+     .container .card .date input[type="date"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+    }
+    /*-----Date-----*/
+    /*-----CheckBox-----*/
+    .container .card .checkbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .container .card .checkbox label {
+        padding-left: 15px;
+        text-indent: -15px;
+        cursor: pointer;
+
+        font-size: 11pt;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    .container .card .checkbox input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        vertical-align: bottom;
+        top: -1px;
+        cursor: pointer;
+    }
+    .container .card .checkbox input[type="text"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+        width: 50%;
+    }
+    /*-----CheckBox-----*/
+    /*-----Radio-----*/
+    .container .card .radio{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .container .card .radio2{
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    .container .card .radio label,
+    .container .card .radio2 label{
+        display: block;
+        padding-left: 15px;
+        text-indent: -15px;
+        cursor: pointer;
+
+        font-size: 11pt;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1.5;
+    }
+    .container .card .radio2 label{
+        text-align: center;
+    }
+    .container .card .radio input[type="radio"],
+    .container .card .radio2 input[type="radio"] {
+        width: 18px;
+        height: 18px;
+        vertical-align: bottom;
+        position: relative;
+        top: -1px;
+        cursor: pointer;
+    }
+    .container .card .radio input[type="text"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+        width: 50%;
+    }
+    /*-----Radio-----*/
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="card-head">
+            <img src="https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg" alt="">
+            <div class="info">
+                <h1>New Survey</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique lectus metus, non maximus turpis tempus iaculis. Curabitur faucibus consectetur sapien, ac vestibulum felis vulputate ac. Sed tempus viverra tellus ut luctus. Fusce rutrum turpis quis pharetra congue. Fusce id ligula eu lectus auctor pellentesque. Morbi porttitor volutpat risus, facilisis sagittis risus dictum vitae. Fusce condimentum accumsan justo vitae mollis.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Text Input</h3>
+            <div class="text">
+                <input type="text" name="" id="" placeholder="Insira Aqui">
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Big Text Input</h3>
+            <div class="bigtext">
+                    <textarea name="" id="" rows="1" placeholder="Insira Aqui" oninput="auto_grow(this)"></textarea>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Time Input</h3>
+            <div class="time">
+                <input type="time" name="" id="">
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Date Input</h3>
+            <div class="date">
+                <input type="date" name="" id="">
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Check Box Input</h3>
+            <div class="checkbox">
+                <label><input type="checkbox" /> CheckBox 1</label>
+                <label><input type="checkbox" /> CheckBox 2</label>
+                <label><input type="checkbox" /> CheckBox 3</label>
+                <label><input type="checkbox" /> Other: <input type="text"></label>
+            </div>    
+        </div>
+
+        <div class="card">
+            <h3>Radio Input</h3>
+            <div class="radio2">
+                <div class="radio">
+                    <label></label>
+                    <label>Very Bad</label>
+                </div>
+                <div class="radio">
+                    <label>1</label>
+                    <input type="radio" name="radio2"/>
+                </div>
+                <div class="radio">
+                    <label>2</label>
+                    <input type="radio" name="radio2"/>
+                </div>
+                <div class="radio">
+                    <label>3</label>
+                    <input type="radio" name="radio2"/>
+                </div>
+                <div class="radio">
+                    <label>4</label>
+                    <input type="radio" name="radio2"/>
+                </div>
+                <div class="radio">
+                    <label></label>
+                    <label>Very Good</label>
+                </div>
+            </div>    
+        </div>
+
+        <div class="card">
+            <h3>Radio Input</h3>
+            <div class="radio">
+                <label><input type="radio" name="radio"/> Radio 1</label>
+                <label><input type="radio" name="radio"/> Radio 2</label>
+                <label><input type="radio" name="radio"/> Radio 3</label>
+                <label><input type="radio" name="radio"/> Other: <input type="text"></label>
+            </div>    
+        </div>
+        
+    </div>
+
+    <script>
+        function auto_grow(element) {
+            element.style.height = "5px";
+            element.style.height = ((element.scrollHeight)+1.59) + "px";
+        }
+    </script>
+</body>
+</html>
