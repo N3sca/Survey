@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+    }
+    body{
+        background-color: rgb(234, 232, 232);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 25vw 0;
+        width: 100%;
+    }
+    .container .card-head{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-shadow: rgba(149,157,165,.3) 0px 8px 24px 4px;
+        background-color: #fff;
+    }
+    .container .card-head img{
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 150px;
+    }
+    .container .card-head .info{
+        padding: 10px;
+    }
+    .container .card-head .info h1{
+        padding: 5px 0 5px;
+        font-size: 24pt;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0;
+    }
+    .container .card-head .info p{
+        text-align: justify;
+        font-size: 11pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+
+    .container .card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-shadow: rgba(149,157,165,.3) 0px 8px 24px 4px;
+        background-color: #fff;
+    }
+    .container .card{
+        padding: 15px;
+    }
+    .container .card h3{
+        margin-bottom: 10px;
+        font-size: 12pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+    /*-----Text-----*/
+    .container .card .text input[type="text"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+        width: 50%;
+
+        font-size: 11pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+    .container .card .text input[type="text"]:focus{
+        border-bottom: 2px solid rgba(149,157,165,.9);
+    }
+    /*-----Text-----*/
+    /*-----Text-----*/
+    .container .card .bigtext textarea{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+        width: 100%;
+        resize: none;
+        overflow: hidden;
+
+        font-size: 11pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+    .container .card .bigtext textarea:focus{
+        border-bottom: 2px solid rgba(149,157,165,.9);
+    }
+    /*-----Text-----*/
+    /*-----Time-----*/
+    .container .card .time input[type="time"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+    }
+    /*-----Time-----*/
+    /*-----Date-----*/
+     .container .card .date input[type="date"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+    }
+    /*-----Date-----*/
+    /*-----CheckBox-----*/
+    .container .card .checkbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .container .card .checkbox label {
+        padding-left: 15px;
+        text-indent: -15px;
+        cursor: pointer;
+
+        font-size: 11pt;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    .container .card .checkbox input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        vertical-align: bottom;
+        top: -1px;
+        cursor: pointer;
+    }
+    .container .card .checkbox input[type="text"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+        width: 50%;
+    }
+    /*-----CheckBox-----*/
+    /*-----Radio-----*/
+    .container .card .radio{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .container .card .radio2{
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    .container .card .radio label,
+    .container .card .radio2 label{
+        display: block;
+        padding-left: 15px;
+        text-indent: -15px;
+        cursor: pointer;
+
+        font-size: 11pt;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1.5;
+    }
+    .container .card .radio2 label{
+        text-align: center;
+    }
+    .container .card .radio input[type="radio"],
+    .container .card .radio2 input[type="radio"] {
+        width: 18px;
+        height: 18px;
+        vertical-align: bottom;
+        position: relative;
+        top: -1px;
+        cursor: pointer;
+    }
+    .container .card .radio input[type="text"]{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(149,157,165,.3);
+        width: 50%;
+    }
+    /*-----Radio-----*/
+    /*-------------- FOOTER ---------------*/ 
+    footer{
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .socials{
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        margin-bottom: 20px;
+    }
+
+    footer .socials i{
+        font-size: 40px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        color: #333333;
+    }
+
+    footer .socials i:hover{
+        color: #6b6a6a;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+    footer p i{
+        font-size: 12px;
+    }
+    /*-------------- Footer ---------------*/
