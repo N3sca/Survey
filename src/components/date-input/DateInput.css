@@ -1,0 +1,5 @@
+.date-input .date input[type="date"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(149, 157, 165, .3);
+}

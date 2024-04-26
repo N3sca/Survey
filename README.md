@@ -1,9 +1,8 @@
-# N3sca/Survey
-Just enjoying the learning
+# React + Vite
 
-View example:
-<br />
-[ON Vercel - https://survey-vercel-beta.vercel.app/](https://survey-vercel-beta.vercel.app)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Still in progress... :)
-![image](https://github.com/N3sca/Survey/assets/62601767/f8540ae5-2406-4195-b3aa-045f1024e32b)
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
