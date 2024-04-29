@@ -7,7 +7,9 @@
 
 <br />
 
-![image](https://github.com/N3sca/Survey/assets/62601767/5d02100e-486b-4278-b529-6878ae2c0106)
+![RPReplay_Final1714405869](https://github.com/N3sca/Survey/assets/62601767/8ead2136-95c9-4dea-8a69-2fc26d10f5a9)
+> It works also on PC
+> 
 > Not yet on release version
 
 <br />
