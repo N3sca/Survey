@@ -12,8 +12,7 @@
 .checkbox-input .checkbox input[type="checkbox"]{
     width: 18px;
     height: 18px;
-    vertical-align: bottom;
-    top: -1px;
+    vertical-align: middle;
     cursor: pointer;
 }
 .checkbox-input .checkbox input[type="text"]{

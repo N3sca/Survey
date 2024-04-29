@@ -14,10 +14,12 @@ p,
 label,
 input[type="text"]{font-size: 11pt; font-weight: 400; line-height: 1.5; letter-spacing: 0;}
 textarea{font-size: 11pt; font-weight: 400; line-height: 1.5; letter-spacing: 0;}
+input[type="button"]{font-size: 11pt; font-weight: 500; line-height: 1.5; letter-spacing: 0;}
 .survey{
     display: flex;
     flex-direction: column;
     width: 100%;
+    transition: padding 0.6s;
 }
 .survey .header{
     display: flex;
@@ -59,11 +61,33 @@ textarea{font-size: 11pt; font-weight: 400; line-height: 1.5; letter-spacing: 0;
     margin-bottom: 10px;
 }
 
+.survey .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="button"]{
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    padding: 8px 8px;
+    background-color: hsl(228, 40%, 25%);
+    box-shadow: rgba(149, 157, 165, .3) 0px 8px 24px 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+input[type="button"]:hover{
+    border: 0;
+    outline: 0;
+    background-color: hsl(228, 40%, 45%);
+}
+
 @media only screen and (max-width: 760px) {
     .survey{
         padding: 15px 15px;
-    }
-    
+    } 
 }
 @media only screen and (min-width: 761px) and (max-width: 1200px) {
     .survey{
