@@ -1,0 +1,63 @@
+{
+    "short_name": "Survey",
+    "name": "N3sca/Survey",
+    "icons": [
+        {
+            "src": "s_16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "s_32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "s_120x120.png",
+            "type": "image/png",
+            "sizes": "120x120"
+        },
+        {
+            "src": "s_152x152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "s_167x167.png",
+            "type": "image/png",
+            "sizes": "167x167"
+        },
+        {
+            "src": "s_180x180.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "s.png",
+            "type": "image/png",
+            "sizes": "500x500"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "screan.png",
+            "type": "image/png",
+            "sizes": "1882x1071",
+            "form_factor": "wide"
+        },
+        {
+            "src": "screan.png",
+            "type": "image/png",
+            "sizes": "1882x1071",
+            "form_factor": "narrow"
+          }
+    ],
+    "start_url": "index.html",
+    "background_color": "#eae8e8",
+    "orientation": "portrait-primary",
+    "display_override": ["fullscreen", "minimal-ui"],
+    "display": "standalone",
+    "theme_color": "#263059",
+    "description": "Survey - Personal Project from N3sca",
+    "prefer_related_applications": false
+  }
