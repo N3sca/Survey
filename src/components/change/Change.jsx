@@ -1,44 +1,38 @@
 import "./Change.css"
 import React,{ useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 function Change() {
     const [className, setClassName] = useState("change");
     const buttonChange = useRef(null);
     const changeDiv = useRef(null);
 
     useEffect(() => {
-        buttonChange.current.addEventListener("click", handleChangeClick);
-      return() => {//when dismantle do this;
-        buttonChange.current.removeEventListener("click", handleChangeClick);
+        document.getElementById('changediv').addEventListener("click", handleChangeClick);
+      return() => {/*when dismantle do this;*/
+        document.getElementById('changediv').removeEventListener("click", handleChangeClick);
       }
-    }, [])
+    })
   
     function handleChangeClick(){
-      if(changeDiv.current.className == "change-open") {
-        setClassName("change");
-        document.getElementById("croll").style.display = "none";
-        }else{ 
-            setClassName("change-open");
-            setTimeout(() => {
-                document.getElementById("croll").style.display = "block";
-            }, 1000);
-        }
+      if(changeDiv.current.className == "change-open")setClassName("change");
+      else setClassName("change-open");
     }
 
 
     return(
-        <div className={className} ref={changeDiv}>
+        <div id="changediv" className={className} ref={changeDiv}>
             <div className="info">
                 <h2>Which one?</h2>
                 <div id="croll" className="croll" ><img src="/croll.png" alt="" /></div>
                 <div className="info-row">
-                    <div className="card">
+                    <Link to="/" className="card">
                         <img src="/s.jpg" alt="" />
+                        <h3>Global</h3>
+                    </Link>
+                    <Link to="/lh" className="card">
+                        <img src="/lh.jpg" alt="" />
                         <h3>Lewis&nbsp;Hamilton</h3>
-                    </div>
-                    <div className="card">
-                        <img src="/s.jpg" alt="" />
-                        <h3>Max&nbsp;Verstappen</h3>
-                    </div>
+                    </Link>
                     <div className="card">
                         <img src="/s.jpg" alt="" />
                         <h3>Charles&nbsp;Leclerc</h3>

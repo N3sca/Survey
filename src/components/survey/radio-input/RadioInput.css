@@ -1,0 +1,36 @@
+.radio-input .radio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.radio-input .radio2{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.radio-input .radio label,
+.radio-input .radio2 label{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    cursor: pointer;
+}
+.radio-input .radio2 label{
+    text-align: center;
+}
+.radio-input .radio input[type="radio"],
+.radio-input .radio input[type="radio"]{
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+.radio-input .radio input[type="text"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(149, 157, 165, .3);
+    width: 50%;
+}

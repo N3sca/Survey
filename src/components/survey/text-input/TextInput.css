@@ -1,0 +1,9 @@
+.text-input .text input[type="text"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(149, 157, 165, .3);
+    width: 50%;
+}
+.text-input .text input[type="text"]:focus{
+    border-bottom: 2px solid rgba(149, 157, 165, .9);
+}

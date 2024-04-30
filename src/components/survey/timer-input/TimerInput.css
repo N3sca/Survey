@@ -1,0 +1,5 @@
+.timer-input .time input[type="time"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(149, 157, 165, .9);
+}

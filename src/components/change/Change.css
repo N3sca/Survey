@@ -79,15 +79,20 @@
 .change-open input{
     margin-top: 10px;
 }
-
-.croll{
-    display: none;
+.change .croll{
+    opacity: 0;
+    position: absolute;
+    right: 50px;/*50px from ".change"*/
+    bottom: 50%;
+}
+.change-open .croll{
+    opacity: 1;
     position: absolute;
     right: 50px;/*50px from ".change"*/
     bottom: 50%;
 }
 .croll img{
-    height: 50px;
+    height: 60px;
     width: auto;
 }
 
