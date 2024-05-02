@@ -7,7 +7,8 @@
 
 <br />
 
-![RPReplay_Final1714405869](https://github.com/N3sca/Survey/assets/62601767/8ead2136-95c9-4dea-8a69-2fc26d10f5a9)
+<img src="./public/readme.gif">
+
 > It works also on PC
 > 
 > Not yet on release version
