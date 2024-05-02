@@ -33,20 +33,20 @@ function Change() {
                         <img src="/lh.jpg" alt="" />
                         <h3>Lewis&nbsp;Hamilton</h3>
                     </Link>
-                    <div className="card">
-                        <img src="/s.jpg" alt="" />
+                    <Link to="/cl" className="card">
+                        <img src="/cl.jpg" alt="" />
                         <h3>Charles&nbsp;Leclerc</h3>
-                    </div>
+                    </Link>
                 </div>
                 <div className="info-row">
-                    <div className="card">
-                        <img src="/s.jpg" alt="" />
+                    <Link to="/cs" className="card">
+                        <img src="/cs.jpg" alt="" />
                         <h3>Carlos&nbsp;Sainz</h3>
-                    </div>
-                    <div className="card">
-                        <img src="/s.jpg" alt="" />
-                        <h3>Charles&nbsp;Leclerc</h3>
-                    </div>
+                    </Link>
+                    <Link to="/mv" className="card">
+                        <img src="/mv.jpg" alt="" />
+                        <h3>Max&nbsp;Verstappen</h3>
+                    </Link>
                 </div>
             </div>
             <input type="button" value={"Whoops?"} ref={buttonChange}/>

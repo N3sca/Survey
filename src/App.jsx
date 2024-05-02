@@ -3,6 +3,8 @@ import useLocalStorage from "use-local-storage";
 
 import SurveyMain from './components/survey/survey-main.jsx';
 
+import {Outlet} from 'react-router-dom'
+
 import Change from './components/change/Change.jsx';
 import Footer from './components/footer/Footer.jsx';
 function App() {
@@ -12,8 +14,8 @@ function App() {
   return (
     <div className='App' data-theme={themeIsDark ? "dark" : "light"}>
       
-      <SurveyMain />
-
+      <Outlet />
+      
       <Change />
       <Footer />
     </div>

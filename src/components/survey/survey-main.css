@@ -19,6 +19,7 @@
     object-position: middle;
     width: 100%;
     height: 150px;
+    aspect-ratio: 16 / 9;
 }
 .survey .header .info{
     padding: 10px 25px 25px;
