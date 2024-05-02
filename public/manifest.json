@@ -52,7 +52,7 @@
             "form_factor": "narrow"
           }
     ],
-    "start_url": "index.html",
+    "start_url": "./",
     "background_color": "#eae8e8",
     "orientation": "portrait-primary",
     "display_override": ["fullscreen", "minimal-ui"],
