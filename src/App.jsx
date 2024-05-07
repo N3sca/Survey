@@ -3,7 +3,7 @@ import useLocalStorage from "use-local-storage";
 
 import SurveyMain from './components/survey/survey-main.jsx';
 
-import {Outlet} from 'react-router-dom'
+import { Outlet , ScrollRestoration} from 'react-router-dom'
 
 import Change from './components/change/Change.jsx';
 import Footer from './components/footer/Footer.jsx';
@@ -15,7 +15,8 @@ function App() {
     <div className='App' data-theme={themeIsDark ? "dark" : "light"}>
       
       <Outlet />
-      
+      <ScrollRestoration />
+
       <Change />
       <Footer />
     </div>
