@@ -5,6 +5,7 @@ import SurveyMain from './components/survey/survey-main.jsx';
 
 import { Outlet , ScrollRestoration} from 'react-router-dom'
 
+import LogoBack from './components/logo-back/LogoBack.jsx';
 import Change from './components/change/Change.jsx';
 import Footer from './components/footer/Footer.jsx';
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Outlet />
       <ScrollRestoration />
 
+      <LogoBack />
       <Change />
       <Footer />
     </div>
