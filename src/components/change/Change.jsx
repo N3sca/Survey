@@ -24,7 +24,7 @@ function Change() {
             <div className="info">
                 <h2>Which one?</h2>
                 <div id="croll" className="croll" ><img src="/croll.png" alt="" /></div>
-                <div className="info-row">
+
                     <Link to="/" className="card">
                         <img src="/s.jpg" alt="" />
                         <h3>Global</h3>
@@ -37,8 +37,6 @@ function Change() {
                         <img src="/cl.jpg" alt="" />
                         <h3>Charles&nbsp;Leclerc</h3>
                     </Link>
-                </div>
-                <div className="info-row">
                     <Link to="/cs" className="card">
                         <img src="/cs.jpg" alt="" />
                         <h3>Carlos&nbsp;Sainz</h3>
@@ -47,7 +45,6 @@ function Change() {
                         <img src="/mv.jpg" alt="" />
                         <h3>Max&nbsp;Verstappen</h3>
                     </Link>
-                </div>
             </div>
             <input type="button" value={"Whoops?"} ref={buttonChange}/>
         </div>
